@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
@@ -31,14 +32,11 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <button type="button" role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="modal"
-                        data-placement="bottom">Reserve
+                    <button type="button" role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="modal" data-target="#reserveModal">Reserve
                         Campsite</button>
                 </div>
             </div>
     </header>
-
-    
 
     
 
@@ -51,11 +49,13 @@
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>
+                            Home</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About
                             Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i
                                 class="fa fa-address-card fa-lg"></i>Contact</a></li>
                 </ul>
@@ -126,7 +126,8 @@
                                 alt="Breadcrumb Trail Campground" />
                             <div class="carousel-caption">
                                 <h3>Breadcrumb Trail Campground</h3>
-                                <p class="d-none d-sm-block">Let Nucamp be your gudie to this off-the-beaten-path,
+                                <p class="d-none d-sm-block">Let Nucamp be your gudie to this
+                                    off-the-beaten-path,
                                     hike-in-only campground</p>
                             </div>
                         </div>
@@ -134,8 +135,10 @@
                             <img class="d-block w-100" src="img/react-lake.jpg" alt="React Lake Campground" />
                             <div class="carousel-caption">
                                 <h3>React Lake Campground</h3>
-                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this
-                                    campground on the shores of the pristine React Lake is a favorite for fly fishers
+                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains,
+                                    this
+                                    campground on the shores of the pristine React Lake is a favorite for fly
+                                    fishers
                                 </p>
                             </div>
                         </div>
@@ -143,7 +146,8 @@
                             <img class="c-block w-100" src="img/chrome-river.jpg" alt="Chrome River Campground" />
                             <div class="carousel-caption">
                                 <h3>Chrome River Campground</h3>
-                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy
+                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a
+                                    canopy
                                     of old-growth first at this enchanting spot by the Chrome River.</p>
                             </div>
                         </div>
@@ -170,7 +174,8 @@
                         alt="Breadcrumb Trail thumbnail" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave
+                            your
                             own reviews!</p>
                     </div>
                 </div>
@@ -190,7 +195,8 @@
 
                     <div class="media-body align-self-center">
                         <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this
+                            campground
                             on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
                     <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg"
@@ -211,7 +217,8 @@
                     <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at
+                            prices you
                             can't beat.</p>
                     </div>
                 </div>
@@ -228,7 +235,8 @@
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="form-group row">
-                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of
+                                    Campers</label>
                                 <!--Select Dropdown-->
                                 <div class="col">
                                     <select name="numCampers" id="numCampers" class="form-control">
